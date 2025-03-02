@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-tabla',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './tabla.component.html',
   styleUrl: './tabla.component.css'
 })

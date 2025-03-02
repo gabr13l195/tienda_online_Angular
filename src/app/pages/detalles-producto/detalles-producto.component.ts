@@ -1,11 +1,36 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { ProductoService } from '../../services/producto.service';
+import { ActivatedRoute } from '@angular/router';
+import { TablaComponent } from "../../components/tabla/tabla.component";
 
 @Component({
   selector: 'app-detalles-producto',
-  imports: [],
+  imports: [FormsModule, TablaComponent],
   templateUrl: './detalles-producto.component.html',
   styleUrl: './detalles-producto.component.css'
 })
 export class DetallesProductoComponent {
+
+  id:any
+  producto:any
+  tipo: any
+  precio: any
+
+  item:any
+
+  servicio= inject(ProductoService)
+  ruta = inject(ActivatedRoute)
+
+  ngOnInit(){
+    this.ruta.params.subscribe(p=>{
+      this.servicio.getUnicoProducto(p["idProducto"]).subscribe(producto=>{
+        this.item = producto
+        this.id = this.item.id
+        this.producto = this.item.producto 
+        this.precio = this.item.precio
+      })
+    })
+  }
 
 }

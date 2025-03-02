@@ -14,9 +14,31 @@ export class ProductoService {
   //METODO GET
   getProductos():Observable<any>{
     return this.http.get(this.API_PRODUCTOS)
-  }}
+  }
 
-  
+  getUnicoProducto(id:any):Observable<any>{
+    return this.http.get(`${this.API_PRODUCTOS}/${id}`)
+  }
 
   //METODO POST
+  postProductos(producto:any):Observable<any>{
+    return this.http.post(this.API_PRODUCTOS, producto)
+  }
+
+  //METODO DELETE
+  deleteProducto(id:any):Observable<any>{
+    return this.http.delete(`${this.API_PRODUCTOS}/${id}`)
+  }
+
+  //METODO PUT
+  putProducto(producto:any):Observable<any>{
+    return this.http.put(`${this.API_PRODUCTOS}/${producto.id}`,producto)
+  }
+
+
+
+
+
+}
+
   
