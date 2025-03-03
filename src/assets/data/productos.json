@@ -13,28 +13,22 @@
       "precio": "120"
     },
     {
-      "id": "c6be",
-      "producto": "Mueble",
-      "tipo": "Cocina",
-      "precio": "2323"
-    },
-    {
-      "id": "3756",
-      "producto": "Juego de vasos",
-      "tipo": "Cocina",
-      "precio": "25,0"
-    },
-    {
-      "id": "0013",
-      "producto": "Camiseta",
-      "tipo": "Ropa",
-      "precio": "23"
-    },
-    {
       "id": "068a",
       "producto": "escritorio",
-      "tipo": "Hogar",
+      "tipo": "Tecnología",
       "precio": "75,50"
+    },
+    {
+      "id": "77b6",
+      "producto": "Television",
+      "tipo": "Cocina",
+      "precio": "2342"
+    },
+    {
+      "id": "b083",
+      "producto": "Silla gamer",
+      "tipo": "Tecnología",
+      "precio": "23234"
     }
   ]
 }

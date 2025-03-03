@@ -5,7 +5,7 @@ import { DetallesProductoComponent } from "../detalles-producto/detalles-product
 
 @Component({
   selector: 'app-home',
-  imports: [FooterComponent, DetallesProductoComponent],
+  imports: [FooterComponent, ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
