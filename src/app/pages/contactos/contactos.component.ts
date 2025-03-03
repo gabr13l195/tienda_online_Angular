@@ -7,7 +7,7 @@ import { TablaComponent } from "../../components/tabla/tabla.component";
 
 @Component({
   selector: 'app-contactos',
-  imports: [CommonModule, FormularioProductosComponent, FooterComponent, TablaComponent],
+  imports: [CommonModule, FooterComponent],
   templateUrl: './contactos.component.html',
   styleUrl: './contactos.component.css'
 })

@@ -1,10 +1,11 @@
 import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ProductoService } from '../../services/producto.service';
+import { FooterComponent } from "../footer/footer.component";
 
 @Component({
   selector: 'app-tabla',
-  imports: [RouterLink],
+  imports: [RouterLink, ],
   templateUrl: './tabla.component.html',
   styleUrl: './tabla.component.css'
 })

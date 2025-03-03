@@ -3,10 +3,11 @@ import { FormsModule } from '@angular/forms';
 import { ProductoService } from '../../services/producto.service';
 import { ActivatedRoute } from '@angular/router';
 import { TablaComponent } from "../../components/tabla/tabla.component";
+import { FooterComponent } from "../../components/footer/footer.component";
 
 @Component({
   selector: 'app-detalles-producto',
-  imports: [FormsModule, TablaComponent],
+  imports: [FormsModule, FooterComponent],
   templateUrl: './detalles-producto.component.html',
   styleUrl: './detalles-producto.component.css'
 })
@@ -21,6 +22,10 @@ export class DetallesProductoComponent {
 
   servicio= inject(ProductoService)
   ruta = inject(ActivatedRoute)
+
+  editar(formulario: any) {
+    this.servicio.putProductos(formulario.value).subscribe()
+  }
 
   ngOnInit(){
     this.ruta.params.subscribe(p=>{

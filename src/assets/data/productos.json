@@ -4,18 +4,18 @@
       "id": "a8a1",
       "producto": "Teclado",
       "tipo": "Tecnología",
-      "precio": "12"
+      "precio": "50"
     },
     {
       "id": "d2bc",
-      "producto": "asdfsad",
+      "producto": "Juego de ollas ",
       "tipo": "Cocina",
       "precio": "120"
     },
     {
       "id": "c6be",
       "producto": "Mueble",
-      "tipo": "Tecnología",
+      "tipo": "Cocina",
       "precio": "2323"
     },
     {
@@ -23,6 +23,18 @@
       "producto": "Juego de vasos",
       "tipo": "Cocina",
       "precio": "25,0"
+    },
+    {
+      "id": "0013",
+      "producto": "Camiseta",
+      "tipo": "Ropa",
+      "precio": "23"
+    },
+    {
+      "id": "068a",
+      "producto": "escritorio",
+      "tipo": "Hogar",
+      "precio": "75,50"
     }
   ]
 }
