@@ -26,12 +26,12 @@ export class ProductoService {
   }
 
   //METODO DELETE
-  deleteProducto(id:any):Observable<any>{
+  deleteProductos(id:any):Observable<any>{
     return this.http.delete(`${this.API_PRODUCTOS}/${id}`)
   }
 
   //METODO PUT
-  putProducto(producto:any):Observable<any>{
+  putProductos(producto:any):Observable<any>{
     return this.http.put(`${this.API_PRODUCTOS}/${producto.id}`,producto)
   }
 
