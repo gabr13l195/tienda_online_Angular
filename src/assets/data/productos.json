@@ -1,12 +1,6 @@
 {
   "productos": [
     {
-      "id": "a8a1",
-      "producto": "Teclado",
-      "tipo": "Tecnología",
-      "precio": "50"
-    },
-    {
       "id": "d2bc",
       "producto": "Juego de ollas ",
       "tipo": "Cocina",
