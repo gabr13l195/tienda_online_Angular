@@ -1,18 +1,6 @@
 {
   "productos": [
     {
-      "id": "d2bc",
-      "producto": "Juego de ollas ",
-      "tipo": "Cocina",
-      "precio": "120"
-    },
-    {
-      "id": "068a",
-      "producto": "escritorio",
-      "tipo": "Tecnología",
-      "precio": "75,50"
-    },
-    {
       "id": "77b6",
       "producto": "Television",
       "tipo": "Cocina",
@@ -23,6 +11,24 @@
       "producto": "Silla gamer",
       "tipo": "Tecnología",
       "precio": "23234"
+    },
+    {
+      "id": "6bb5",
+      "producto": "Mousepad",
+      "tipo": "Tecnología",
+      "precio": "200"
+    },
+    {
+      "id": "df0f",
+      "producto": "Camiseta",
+      "tipo": "Ropa",
+      "precio": "25"
+    },
+    {
+      "id": "a3c0",
+      "producto": "Pantalon Levis",
+      "tipo": "Ropa",
+      "precio": "45"
     }
   ]
 }
