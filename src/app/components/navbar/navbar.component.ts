@@ -11,4 +11,8 @@ export class NavbarComponent {
 
   verificar = localStorage.getItem('login')
 
+  logout(){
+    localStorage.setItem('login', 'false')
+    window.location.href="login"
+  }
 }

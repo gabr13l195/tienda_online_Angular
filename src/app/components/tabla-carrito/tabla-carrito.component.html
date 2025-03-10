@@ -1,50 +1,61 @@
-<div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-            <tr>
-                <th scope="col" class="px-6 py-3">Producto</th>
-                <th scope="col" class="px-6 py-3">Tipo</th>
-                <th scope="col" class="px-6 py-3">Precio</th>
-                <th scope="col" class="px-6 py-3">Cantidad</th>
-                <th scope="col" class="px-6 py-3">Subtotal</th>
-                <th scope="col" class="px-6 py-3">IVA</th>
-                <th scope="col" class="px-6 py-3">TOTAL</th>
-            </tr>
-        </thead>
-        <tbody>
-            @for (item of productos; track item) {
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                <td class="px-6 py-4">
-                    {{item.producto}}
-                </td>
-                <td class="px-6 py-4">
-                    {{item.tipo}}
-                </td>
-                <td class="px-6 py-4">
-                    {{item.precio}}
-                </td>
-                <td class="px-6 py-4">
-                    {{item.cantidad}}
-                </td>
-                <td class="px-6 py-4">
-                    {{(item.precio)*(item.cantidad)}}
-                </td>
-                <td class="px-6 py-4">
-                    {{(item.precio)*(item.cantidad)*0.15}}
-                </td>
-                <td class="px-6 py-4">
-                    {{(item.precio)*(item.cantidad)+(item.precio)*(item.cantidad)*0.15}}
-                </td>
-            </tr>
-            }
-            
-        </tbody>
-        <tfoot>
-            <tr class="bg-gray-700 text-white font-bold">
-                <td colspan="6" class="px-6 py-4 text-right">Total a Pagar:</td>
-                <td class="px-6 py-4">
-                </td>
-            </tr>
-        </tfoot>
-    </table>
-</div>
+<section class="bg-white dark:bg-gray-900">
+    <div class="py-12 px-6 mx-auto max-w-screen-xl text-center lg:py-16">
+        
+        <h1
+            class="mb-10 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+            Realiza tu compra
+        </h1>
+        <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+            <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                    <tr>
+                        <th scope="col" class="px-6 py-3">Producto</th>
+                        <th scope="col" class="px-6 py-3">Tipo</th>
+                        <th scope="col" class="px-6 py-3">Precio</th>
+                        <th scope="col" class="px-6 py-3">Cantidad</th>
+                        <th scope="col" class="px-6 py-3">Subtotal</th>
+                        <th scope="col" class="px-6 py-3">IVA</th>
+                        <th scope="col" class="px-6 py-3">TOTAL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (item of productos; track item) {
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <td class="px-6 py-4">
+                            {{item.producto}}
+                        </td>
+                        <td class="px-6 py-4">
+                            {{item.tipo}}
+                        </td>
+                        <td class="px-6 py-4">
+                            {{item.precio}}
+                        </td>
+                        <td class="px-6 py-4">
+                            {{item.cantidad}}
+                        </td>
+                        <td class="px-6 py-4">
+                            {{(item.precio)*(item.cantidad)}}
+                        </td>
+                        <td class="px-6 py-4">
+                            {{(item.precio)*(item.cantidad)*0.15}}
+                        </td>
+                        <td class="px-6 py-4">
+                            {{(item.precio)*(item.cantidad)+(item.precio)*(item.cantidad)*0.15}}
+                        </td>
+                    </tr>
+                    }
+
+                </tbody>
+                <tfoot>
+                    <tr class="bg-gray-700 text-white font-bold">
+                        <td colspan="6" class="px-6 py-4 text-right">Total a Pagar:</td>
+                        <td class="px-6 py-4">
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</section>
+
+<app-footer></app-footer>

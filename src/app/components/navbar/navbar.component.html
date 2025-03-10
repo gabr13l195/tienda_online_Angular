@@ -5,12 +5,20 @@
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="../../../assets/images/logo-navbar.png" class="h-8" alt="Logo">
             </a>
-            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+
+            <!-- Botón de Ingresar / Cerrar Sesión en la misma posición -->
+            <div class="flex md:order-2">
                 @if (verificar=='false') {
                 <a routerLink="login"
-                    class="text-white bg-indigo-400 hover:bg-indigo-500 focus:ring-4 focus:outline-none focus:ring-indigo-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:focus:ring-indigo-800">
+                    class="text-white bg-green-500 hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:focus:ring-green-800">
                     Ingresar
                 </a>
+                }
+                @if (verificar=='true') {
+                <button (click)="logout()"
+                    class="text-white bg-red-500 hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:focus:ring-red-800">
+                    Cerrar Sesión
+                </button>
                 }
             </div>
             <div class="hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
@@ -33,7 +41,7 @@
                         <a routerLink="productos"
                             class="block py-2 px-3 text-white rounded-sm hover:bg-indigo-700 md:hover:bg-transparent md:border-0 md:hover:text-indigo-400 md:p-0">Productos</a>
                     </li>
-                }
+                    }
                     @if (verificar=='true') {
                     <li>
                         <a routerLink="bodega"

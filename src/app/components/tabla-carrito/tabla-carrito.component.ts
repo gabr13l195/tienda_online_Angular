@@ -1,9 +1,10 @@
 import { Component, inject } from '@angular/core';
 import { ProductoService } from '../../services/producto.service';
+import { FooterComponent } from "../footer/footer.component";
 
 @Component({
   selector: 'app-tabla-carrito',
-  imports: [],
+  imports: [FooterComponent],
   templateUrl: './tabla-carrito.component.html',
   styleUrl: './tabla-carrito.component.css'
 })

@@ -3,6 +3,8 @@ import { LoginService } from '../../services/login.service';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { FooterComponent } from "../../components/footer/footer.component";
+import { FormularioProductosComponent } from "../../components/formulario-productos/formulario-productos.component";
+import { TablaComponent } from "../../components/tabla/tabla.component";
 
 @Component({
   selector: 'app-login',

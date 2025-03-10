@@ -22,13 +22,6 @@
       "cantidad": "2"
     },
     {
-      "id": "WpRnlfU",
-      "producto": "Tablet",
-      "tipo": "Tecnología",
-      "precio": "400",
-      "cantidad": "1"
-    },
-    {
       "id": "Q7UYQVt",
       "producto": "Cama 3 plazas",
       "tipo": "Hogar",
@@ -46,6 +39,11 @@
       "email": "romina@gmail.com",
       "password": "$2a$10$VA9XwVvQKi6zYpDJ4KbNauiFayV2IWjY11BnqumFgDStHBBnSOhL.",
       "id": 2
+    },
+    {
+      "email": "pepito@gmail.com",
+      "password": "$2a$10$vgJ1TGmHg/tEucvxYxcziuhJy7fwb7IGqqwyQs0VhkJnIeahoCs9C",
+      "id": 3
     }
   ]
 }
