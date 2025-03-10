@@ -13,6 +13,7 @@ export class FormularioProductosComponent {
   producto: any
   tipo: any
   precio: any
+  cantidad: any
 
   productos:any
 

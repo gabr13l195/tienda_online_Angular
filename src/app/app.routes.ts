@@ -14,6 +14,7 @@ import { RegisterComponent } from './pages/register/register.component';
 import { loginGuard } from './guards/login.guard';
 import { registerGuard } from './guards/register.guard';
 import { privadoGuard } from './guards/privado.guard';
+import { TablaCarritoComponent } from './components/tabla-carrito/tabla-carrito.component';
 
 export const routes: Routes = [
     {path:'home', component: HomeComponent},
@@ -26,6 +27,7 @@ export const routes: Routes = [
     {path: 'bodega', component:BodegaComponent, canActivate:[loginGuard]},
     {path: 'login', component:LoginComponent, canActivate:[privadoGuard]},
     {path: 'register', component:RegisterComponent},
+    {path: 'carrito', component:TablaCarritoComponent},
 
     {path: '', redirectTo:'home', pathMatch:'full'},
 

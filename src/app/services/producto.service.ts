@@ -15,7 +15,7 @@ export class ProductoService {
   getProductos():Observable<any>{
     return this.http.get(this.API_PRODUCTOS)
   }
-
+  
   getUnicoProducto(id:any):Observable<any>{
     return this.http.get(`${this.API_PRODUCTOS}/${id}`)
   }

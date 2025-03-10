@@ -2,20 +2,18 @@
     <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
             <tr>
-                <th scope="col" class="px-6 py-3">ID</th>
                 <th scope="col" class="px-6 py-3">Producto</th>
                 <th scope="col" class="px-6 py-3">Tipo</th>
                 <th scope="col" class="px-6 py-3">Precio</th>
                 <th scope="col" class="px-6 py-3">Cantidad</th>
-                <th scope="col" class="px-6 py-3">Acciones</th>
+                <th scope="col" class="px-6 py-3">Subtotal</th>
+                <th scope="col" class="px-6 py-3">IVA</th>
+                <th scope="col" class="px-6 py-3">TOTAL</th>
             </tr>
         </thead>
         <tbody>
             @for (item of productos; track item) {
             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    {{item.id}}
-                </td>
                 <td class="px-6 py-4">
                     {{item.producto}}
                 </td>
@@ -28,21 +26,25 @@
                 <td class="px-6 py-4">
                     {{item.cantidad}}
                 </td>
-                <td class="px-2 py-4 flex space-x-0.5">
-                    <button
-                        class="px-3 py-2 text-white bg-red-500 hover:bg-red-800 rounded-lg shadow-md hover:shadow-red-500/50 transition duration-300"
-                        (click)="eliminar(item.id)">
-                        Eliminar
-                    </button>
-                    <button 
-                        class="px-3 py-2 text-white bg-indigo-500 hover:bg-blue-900 rounded-lg shadow-md hover:shadow-indigo-500/50 transition duration-300"
-                        [routerLink]="['/producto', item.id]">
-                        Actualizar
-                    </button>
-
+                <td class="px-6 py-4">
+                    {{(item.precio)*(item.cantidad)}}
+                </td>
+                <td class="px-6 py-4">
+                    {{(item.precio)*(item.cantidad)*0.15}}
+                </td>
+                <td class="px-6 py-4">
+                    {{(item.precio)*(item.cantidad)+(item.precio)*(item.cantidad)*0.15}}
                 </td>
             </tr>
             }
+            
         </tbody>
+        <tfoot>
+            <tr class="bg-gray-700 text-white font-bold">
+                <td colspan="6" class="px-6 py-4 text-right">Total a Pagar:</td>
+                <td class="px-6 py-4">
+                </td>
+            </tr>
+        </tfoot>
     </table>
 </div>

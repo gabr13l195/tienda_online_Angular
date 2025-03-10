@@ -4,19 +4,36 @@
       "id": "a3c0",
       "producto": "Pantalon Levis",
       "tipo": "Ropa",
-      "precio": "45"
+      "precio": "45",
+      "cantidad": "2"
     },
     {
+      "id": "Ujs3Inr",
       "producto": "Television",
       "tipo": "Tecnología",
       "precio": "500",
-      "id": "Ujs3Inr"
+      "cantidad": "4"
     },
     {
-      "id": "FVeEDeo"
+      "id": "3IjafA2",
+      "producto": "Mouse Logitech",
+      "tipo": "Tecnología",
+      "precio": "40",
+      "cantidad": "2"
     },
     {
-      "id": "p4ldXDi"
+      "id": "WpRnlfU",
+      "producto": "Tablet",
+      "tipo": "Tecnología",
+      "precio": "400",
+      "cantidad": "1"
+    },
+    {
+      "id": "Q7UYQVt",
+      "producto": "Cama 3 plazas",
+      "tipo": "Hogar",
+      "precio": "400",
+      "cantidad": "1"
     }
   ],
   "users": [
