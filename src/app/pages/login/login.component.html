@@ -1,0 +1,33 @@
+<section class="min-h-screen flex items-center justify-center bg-gray-900">
+    <div class="bg-gray-800 p-8 rounded-lg shadow-lg text-white w-full max-w-md">
+        <h2 class="text-3xl font-bold text-center mb-6">Iniciar Sesión</h2>
+
+        <form (ngSubmit)="login(form)" #form="ngForm">
+            <div class="mb-4">
+                <label for="email" class="block text-sm font-medium text-gray-300">Ingresar Correo</label>
+                <input type="email" id="email" name="email" [(ngModel)]="email" required
+                    class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-2.5">
+            </div>
+
+            <div class="mb-4">
+                <label for="password" class="block text-sm font-medium text-gray-300">Ingrese Contraseña</label>
+                <input type="password" id="password" name="password" [(ngModel)]="password" required
+                    class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-2.5">
+            </div>
+
+            <button
+                class="w-full text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                Acceder
+            </button>
+        </form>
+
+        <!-- Mensaje de redirección al registro -->
+        <p class="text-center text-sm mt-4">
+            ¿No tienes una cuenta?
+            <a routerLink="/register" class="text-blue-400 hover:underline">Regístrate aquí</a>
+        </p>
+    </div>
+</section>
+
+<app-footer></app-footer>
+

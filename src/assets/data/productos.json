@@ -1,34 +1,34 @@
 {
   "productos": [
     {
-      "id": "77b6",
-      "producto": "Television",
-      "tipo": "Cocina",
-      "precio": "2342"
-    },
-    {
-      "id": "b083",
-      "producto": "Silla gamer",
-      "tipo": "Tecnología",
-      "precio": "23234"
-    },
-    {
-      "id": "6bb5",
-      "producto": "Mousepad",
-      "tipo": "Tecnología",
-      "precio": "200"
-    },
-    {
-      "id": "df0f",
-      "producto": "Camiseta",
-      "tipo": "Ropa",
-      "precio": "25"
-    },
-    {
       "id": "a3c0",
       "producto": "Pantalon Levis",
       "tipo": "Ropa",
       "precio": "45"
+    },
+    {
+      "producto": "Television",
+      "tipo": "Tecnología",
+      "precio": "500",
+      "id": "Ujs3Inr"
+    },
+    {
+      "id": "FVeEDeo"
+    },
+    {
+      "id": "p4ldXDi"
+    }
+  ],
+  "users": [
+    {
+      "email": "gabriel@gmail.com",
+      "password": "$2a$10$NqNTkvlW0ZUIXCsUGhLT4OiTGi.7j6shOvYE8.9/nz1pmLQ.2/zPG",
+      "id": 1
+    },
+    {
+      "email": "romina@gmail.com",
+      "password": "$2a$10$VA9XwVvQKi6zYpDJ4KbNauiFayV2IWjY11BnqumFgDStHBBnSOhL.",
+      "id": 2
     }
   ]
 }

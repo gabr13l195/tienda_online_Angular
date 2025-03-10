@@ -11,4 +11,9 @@ import { FooterComponent } from "../../components/footer/footer.component";
 })
 export class BodegaComponent {
 
+  logout(){
+    localStorage.setItem('login', 'false')
+    window.location.href="login"
+  }
+
 }

@@ -9,6 +9,11 @@ import { DetallesProductoComponent } from './pages/detalles-producto/detalles-pr
 import { FormularioProductosComponent } from './components/formulario-productos/formulario-productos.component';
 import { TablaComponent } from './components/tabla/tabla.component';
 import { BodegaComponent } from './pages/bodega/bodega.component';
+import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
+import { loginGuard } from './guards/login.guard';
+import { registerGuard } from './guards/register.guard';
+import { privadoGuard } from './guards/privado.guard';
 
 export const routes: Routes = [
     {path:'home', component: HomeComponent},
@@ -18,7 +23,9 @@ export const routes: Routes = [
     {path: 'producto/:idProducto', component: DetallesProductoComponent},
     {path: 'productos/:formulario-productos', component: FormularioProductosComponent},
     {path: 'tabla', component: TablaComponent},
-    {path: 'bodega', component:BodegaComponent},
+    {path: 'bodega', component:BodegaComponent, canActivate:[loginGuard]},
+    {path: 'login', component:LoginComponent, canActivate:[privadoGuard]},
+    {path: 'register', component:RegisterComponent},
 
     {path: '', redirectTo:'home', pathMatch:'full'},
 
